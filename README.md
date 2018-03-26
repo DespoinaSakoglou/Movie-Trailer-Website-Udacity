@@ -48,6 +48,7 @@ To customize the website and gain extra credit from Udacity, the following featu
 *Content*
 * Added title and text content in the body of the page.
 * Added a horizontal line for visual separation between text and movie tiles.
+* Included 12 movies instead of 6, to create a longer page.
 * Added more characteristics to the movie, including:
   * year of release
   * movie rating
