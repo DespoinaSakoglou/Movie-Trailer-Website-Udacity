@@ -1,8 +1,9 @@
-""" 
+"""
 fresh_tomatoes.py Python module providing starter code
 ======================================================
 
-File contains open_movies_page() function that takes in one argument and creates an HTML file.
+File contains open_movies_page() function that takes in
+one argument and creates an HTML file.
 Argument: a list of movies
 HTML file produces a website to showcase movies.
 
@@ -15,10 +16,10 @@ import os
 # import re module to use re.search() to extract youtube id from url
 import re
 
-""" 
-main_page_head is the variable containing the string where the 
-HTML file's head is stored and will later be passed to the write() 
-method to create the page 
+"""
+main_page_head is the variable containing the string where the
+HTML file's head is stored and will later be passed to the write()
+method to create the page
 """
 # Styles and scripting for the page
 main_page_head = '''
@@ -43,7 +44,7 @@ main_page_head = '''
         .footer {
             position: static;
             text-align: center;
-        }  
+        }
         #trailer .modal-dialog {
             margin-top: 200px;
             width: 640px;
@@ -109,10 +110,10 @@ main_page_head = '''
 </head>
 '''
 
-""" 
-main_page_content is the variable containing the string where the 
-HTML file's body is stored and will later be used with the string formatter 
-to create the movie tiles 
+"""
+main_page_content is the variable containing the string where the
+HTML file's body is stored and will later be used with the string formatter
+to create the movie tiles
 """
 
 # The main page layout and title bar
@@ -159,7 +160,7 @@ main_page_content = '''
          </div>
        </p>
        <hr>
-      {movie_tiles}      
+      {movie_tiles}
     </div>
     <div class="footer">
        <p>Created by: Despoina Sakoglou</p>
@@ -168,10 +169,10 @@ main_page_content = '''
 </html>
 '''
 
-""" 
-movie_tile_content is the variable containing the string where the 
-HTML file body's content related to a single movie tile is stored 
-and will later be used with the string formatter to append the tile 
+"""
+movie_tile_content is the variable containing the string where the
+HTML file body's content related to a single movie tile is stored
+and will later be used with the string formatter to append the tile
 of the movie with its content
 """
 
@@ -180,7 +181,7 @@ movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
     <img src="{poster_image_url}" width="220" height="342">
     <h2>{movie_title}</h2>
-    <p> 
+    <p>
         <span>{movie_release_year}</span>
         <span> - </span>
         <span>{movie_rating}</span>
@@ -190,6 +191,7 @@ movie_tile_content = '''
     <p>{movie_storyline}</p>
 </div>
 '''
+
 
 # define a method that takes list 'movies' as input to create the movie tiles
 def create_movie_tiles_content(movies):
@@ -216,7 +218,9 @@ def create_movie_tiles_content(movies):
         )
     return content
 
-# define a method that takes list 'movies' as input and creates and opens the output file
+
+# define a method that takes list 'movies'
+# as input and creates and opens the output file
 def open_movies_page(movies):
     # Create or overwrite the output file
     output_file = open('fresh_tomatoes.html', 'w')
