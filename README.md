@@ -1,5 +1,4 @@
 # Movie Trailer Website Project
-## by Despoina Sakoglou
 
 This project is part of the Udacity Full Stack Web Developer Nanodegree program.
 
