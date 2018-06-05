@@ -54,3 +54,19 @@ To customize the website and gain extra credit from Udacity, the following featu
   * duration
   * storyline
 * Added author (Despoina Sakoglou) at the content of the footer.
+
+### Website Illustrations
+
+#### Website Screenshots - Home Page
+
+![](/images/mts-home.png)
+
+![](/images/mts-home-dn.png)
+
+#### Website Screenshot - Hover
+
+![](/images/mts-hover.png)
+
+### Website Screenshot - Movie Trailer 
+
+![](/images/mts-trailer.png)
